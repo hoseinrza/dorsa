@@ -5,4 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: '/dorsa.github.io/',
   plugins: [react(), tailwindcss()],
+  preview: {
+    allowedHosts: true,
+  },
 })
